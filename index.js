@@ -1,1 +1,4 @@
-console.log('node js 실행합니다잉!!!!')
+
+
+let name = 'hello';
+let name = 'hi';
