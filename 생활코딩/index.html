@@ -1,18 +1,20 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Things I studied.</title>
-    <meta charset = "utf-8">
-</head>
+    <meta charset="utf-8" />
+  </head>
 
-<body style = background-color:black; color:white;>
+  <body style="background-color: black" color:white;>
     <script>
-        document.write('hello');
+      document.write("hello");
     </script>
     <h1><a href="index.html">Things I studied.</a></h1>
-    <input type = "button" value = "night">
-    <input type = "button" value = "day">
-    <input id = "night_day" type = "button" value = "night" onclick = "
+    <input
+      id="night_day"
+      type="button"
+      value="day"
+      onclick="
            if(document.querySelector('#night_day').value === 'night') {
             document.querySelector('body').style.backgroundColor='black';
             document.querySelector('body').style.color='white';
@@ -23,18 +25,18 @@
                 document.querySelector('body').style.color='black';
                 document.querySelector('#night_day').value='night';
             }"
-            
+    />
+
     <ol>
-        <li><a href = "1.html">language</a></li>
-        <li><a href = "2.html">CS skill</a></li>
-        <li><a href = "3.html">sports</a></li>
-        <li><a href = "4.html">anything</a></li>
+      <li><a href="1.html">language</a></li>
+      <li><a href="2.html">CS skill</a></li>
+      <li><a href="3.html">sports</a></li>
+      <li><a href="4.html">anything</a></li>
     </ol>
 
-    <img src="ro.avif" width = "100%"></img>
+    <img src="ro.avif" width="100%" />
     <h2>Introduce chae</h2>
     <p>2018.01~2019.04 philipinese boracay island and cebu tour guide.</p>
     <p>2023.02~ Computer developer</p>
   </body>
-  </html>
-  
+</html>
