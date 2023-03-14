@@ -1,5 +1,0 @@
-console.log("hello world");
-let three = 3;
-for (i = 0; i <= 10; i++) {
-  console.log(three + i);
-}
