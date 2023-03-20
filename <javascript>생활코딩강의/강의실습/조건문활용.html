@@ -33,3 +33,75 @@ document.querySelector('body').style.color='black';"
          document.querySelector('#night_day').value='night';
      }"
 />
+
+<br>*id = index tag</br>
+
+<h1>리팩토링하기</h1>
+<h2>한 페이지에 여러개의 주간모드 야간모드 버튼 만들기</h2>
+<ol>
+  <li>인덱스태그(id)에 넘버링을 해준다.</li>
+  <input
+  id="night_day1"
+  type="button"
+  value="night"
+  onclick="
+    if(document.querySelector('#night_day1').value === 'night') {
+     document.querySelector('body').style.backgroundColor='black';
+     document.querySelector('body').style.color='white';
+     document.querySelector('#night_day1').value='day';
+     }
+     else{
+         document.querySelector('body').style.backgroundColor='white';
+         document.querySelector('body').style.color='black';
+         document.querySelector('#night_day1').value='night';
+     }"
+/>
+  <input
+  id="night_day2"
+  type="button"
+  value="night"
+  onclick="
+    if(document.querySelector('#night_day2').value === 'night') {
+    document.querySelector('body').style.backgroundColor='black';
+    document.querySelector('body').style.color='white';
+    document.querySelector('#night_day2').value='day';
+    }
+    else{
+       document.querySelector('body').style.backgroundColor='white';
+       document.querySelector('body').style.color='black';
+       document.querySelector('#night_day2').value='night';
+   }"
+/>
+  <li>this활용</li>
+  <input
+  type="button"
+  value="night"
+  onclick="
+    if(this.value === 'night') {
+      document.querySelector('body').style.color='white';
+      document.querySelector('body').style.backgroundColor='black';
+      this.value='day';
+    }
+     else{
+         document.querySelector('body').style.backgroundColor='white';
+         document.querySelector('body').style.color='black';
+         this.value='night';
+     }"
+/>
+  <input
+  type="button"
+  value="night"
+  onclick="
+    if(this.value === 'night') {
+      document.querySelector('body').style.backgroundColor='black';
+      document.querySelector('body').style.color='white';
+      this.value='day';
+    }
+    else{
+       document.querySelector('body').style.backgroundColor='white';
+       document.querySelector('body').style.color='black';
+       this.value='night';
+    }"
+/>
+</ol>
+
