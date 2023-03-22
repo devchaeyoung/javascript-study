@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <mata charset="uft-8" />
+    <title>JS-배열과 반복문</title>
+  </head>
+  <body>
+    <h1>Loop & Array</h1>
+    <script>
+      var coworkers = ["egoing", "elice", "coding", "world"];
+    </script>
+    <h2>co wokers</h2>
+    <ul>
+      <script>
+        var i = 0;
+        while (i < 4) {
+          document.write("<li>" + coworkers[i] + "</li>");
+          i = i + 1;
+        }
+      </script>
+    </ul>
+    <ol>
+      <script>
+        var i = 0;
+        while (i < coworkers.length) {
+          document.write("<li>" + coworkers[i] + "</li>");
+          i = i + 1;
+        }
+      </script>
+    </ol>
+    <ol>
+      <script>
+        var fruits = ["apple", "banana", "mangga"];
+        var i = 0;
+        while (i < 5) {
+          document.write(
+            '<li><a href = "http://a.com' + fruits[i] + '">' + fruits[i] + "</a></li>"
+          );
+          i = i + 1;
+        }
+      </script>
+    </ol>
+  </body>
+</html>
