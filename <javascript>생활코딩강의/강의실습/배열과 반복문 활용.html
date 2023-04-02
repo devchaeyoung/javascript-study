@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="uft-8" />
+    <title>배열과 반복문 활용</title>
+  </head>
+  <body>
+    <h1>What I Learned to Become a Developer</h1>
+    <h2>주간모드 야간모드 링크된 글자 색상 변경</h2>
+
+    <input
+      type="button"
+      value="night"
+      onclick=" var target = document.querySelector('body');
+    if(this.value === 'night') { 
+        target.style.backgroundColor='black';
+        target.style.color='white';
+        this.value='day';
+        var alist = document.querySelectorAll('a');
+        var i = 0;
+        while( i < alist.length){
+            alist[i].style.color = 'powderblue';
+            i = i + 1;
+            }
+    } 
+    else{ target.style.backgroundColor='white';
+    target.style.color='black';
+    this.value='night';
+    var alist = document.querySelectorAll('a');
+    var i = 0;
+    while( i < alist.length){
+        alist[i].style.color = 'blue';
+        i = i + 1;
+        } 
+        }"
+    />
+
+    <ul>
+      <li><a href="https://velog.io/@xiu_8" target="_blank">벨로그</a></li>
+      <li><a href="조건문.html">if</a></li>
+      <li><a href="조건문활용.html">if-example</a></li>
+      <li><a href="toggle.html">toggle</a></li>
+      <li><a href="배열.html">Array</a></li>
+      <li><a href="반복문.html">Loop</a></li>
+      <li><a href=""></a></li>
+    </ul>
+  </body>
+</html>
