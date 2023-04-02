@@ -21,6 +21,32 @@
       </script>
     </ul>
     <h2>parameter & Argument</h2>
+    <h3>parameter : 매개변수(입력)</h3>
+    <!--a,b-->
+    <h3>Argument : 인자</h3>
+    <!--a, b 에 들어오는 값-->
+
+    <script>
+      function onePlusOne() {
+        document.write(1 + 1 + "<br>");
+      }
+      onePlusOne();
+      function sum(a, b) {
+        document.write(a + b + "<br>");
+      }
+      sum(2, 3); //5
+      sume(3, 4); //7
+    </script>
+
     <h2>Return</h2>
+    <h3>(출력)</h3>
+    <script>
+      function sum2(a, b) {
+        return a + b;
+      }
+      document.write(sum(2, 3) + "<br>");
+      document.write('<div style="color:red">' + sum2(2, 3) + "</div>");
+      document.write('<div style="font-size:3rem;">' + sum2(2, 3) + "</div>");
+    </script>
   </body>
 </html>
