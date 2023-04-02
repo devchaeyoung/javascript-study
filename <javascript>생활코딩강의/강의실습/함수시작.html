@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>함수시작</title>
+  </head>
+  <body>
+    <script>
+      function nightDayHandler(self) {
+        var target = document.querySelector("body");
+        if (self.value === "night") {
+          target.style.backgroundColor = "black";
+          target.style.color = "white";
+          self.value = "day";
+
+          var alist = document.querySelectorAll("a");
+          var i = 0;
+          while (i < alist.length) {
+            alist[i].style.color = "pouderblue";
+            i = i + 1;
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
