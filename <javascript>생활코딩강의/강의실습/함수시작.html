@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>함수시작</title>
-  </head>
-  <body>
     <script>
       function nightDayHandler(self) {
         var target = document.querySelector("body");
@@ -24,5 +22,23 @@
         }
       }
     </script>
+  </head>
+  <body>
+    <input
+      id="night_day"
+      type="button"
+      value="night"
+      onclick="
+      nightDayHandler(this);"
+    />
+    <!-- nightDayHandler함수를 실행시켜라-->
+    <input
+      id="night_day"
+      type="button"
+      value="night"
+      onclick="
+    nightDayHandler(this);"
+    />
+    <!--웹페이지의 크기를 극단적으로 줄일 수 있는 효율적인 방법이 바로 함수-->
   </body>
 </html>
