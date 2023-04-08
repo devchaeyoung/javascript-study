@@ -1,51 +1,50 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title></title>
-        <script>
-        function nightDayHandler(self){
-            var target = document.querySelectoe('body');
-            if(self.value === 'night'){
-            target.style.backgroudColor = 'black';
-            target.style.color = 'white';
-            self.value = 'day';
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+      function nightDayHandler(self) {
+        var target = document.querySelector("body"); //this가 아니라 self를 쓰는 이유: this는
+        if (self.value === "night") {
+          target.style.backgroundColor = "black";
+          target.style.color = "white";
+          self.value = "day";
 
-            var alist = document.querySelectorAll('a');
-            var i = 0;
-            while(i<alist.length){
-            alist[i].style.color = 'powderblue';
+          var alist = document.querySelectorAll("a");
+          var i = 0;
+          while (i < alist.length) {
+            alist[i].style.color = "powderblue";
             i = i + 1;
-            }
-            }else {
-                target.style.backgroundColor = 'white';
-                    target.style.color = 'black';
-                    self.value = 'night';
+          }
+        } else {
+          target.style.backgroundColor = "white";
+          target.style.color = "black";
+          self.value = "night";
 
-                    var alist = document.querySelectorAll('a');
-                    var i = 0;
-                    while(i < alist.length){
-                        alist[i].style.color = 'blue';
-                        i = i + 1 ;
-                    }
-                }
-            }
-        </script>
-    </head>
-    <body>
-    <h1><a href ="함수시작.html">function</a></h1>
-    <input id="night_day" type="button" value="night" onclick=
-     "nightDayHandler(this);"/> 
-      <ol>
-        <li><a href="함수.html">함수기본내용</a></li>
-        <li><a href="조건문.html">조건문</a></li>
-        <li><a href="조건문활용.html">조건문활용</a></li>
-        <li><a href="목차.html">목차</a></li>
-      </ol>
+          var alist = document.querySelectorAll("a");
+          var i = 0;
+          while (i < alist.length) {
+            alist[i].style.color = "blue";
+            i = i + 1;
+          }
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h1><a href="함수시작.html">function</a></h1>
+    <input id="night_day" type="button" value="night" onclick="nightDayHandler(this);" />
+    <input id="night_day" type="button" value="night" onclick="nightDayHandler(this);" />
+    <!--input버튼이 1억개라고해도 각 코드가 알아서 작동이 가능하다-->
+    <ol>
+      <li><a href="함수.html">함수기본내용</a></li>
+      <li><a href="조건문.html">조건문</a></li>
+      <li><a href="조건문활용.html">조건문활용</a></li>
+      <li><a href="목차.html">목차</a></li>
+    </ol>
     <h2>javascript</h2>
-    <p>
-        
-    </p>
-
-    </body>
+    <input id="night_day" type="button" value="night" onclick="nightDayHandler(this);" />
+    <p></p>
+  </body>
 </html>
