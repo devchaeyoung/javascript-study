@@ -4,21 +4,21 @@
         <meta charset="utf-8">
         <title></title>
         <script>
-            function nightDayHandler(self){
-                var target = document.querySelectoe('body');
-                if(self.value === 'night'){
-                    target.style.backgroudColor = 'black';
-                    target.style.color = 'white';
-                    self.value = 'day';
+        function nightDayHandler(self){
+            var target = document.querySelectoe('body');
+            if(self.value === 'night'){
+            target.style.backgroudColor = 'black';
+            target.style.color = 'white';
+            self.value = 'day';
 
-                    var alist = document.querySelectorAll('a');
-                    var i = 0;
-                    while(i<alist.length){
-                        alist[i].style.color = 'powderblue';
-                        i = i + 1;
-                    }
-                }else {
-                    target.style.backgroundColor = 'white';
+            var alist = document.querySelectorAll('a');
+            var i = 0;
+            while(i<alist.length){
+            alist[i].style.color = 'powderblue';
+            i = i + 1;
+            }
+            }else {
+                target.style.backgroundColor = 'white';
                     target.style.color = 'black';
                     self.value = 'night';
 
