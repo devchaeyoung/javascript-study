@@ -5,7 +5,8 @@
     <title></title>
     <script>
       function nightDayHandler(self) {
-        var target = document.querySelector("body"); //this가 아니라 self를 쓰는 이유: this는
+        var target = document.querySelector("body");
+        //this가 아니라 self를 쓰는 이유: this는 현재속한 페이지(?)의 것을 뜻하고 self은 바로 self가 속한 곳을 뜻하기 때문에 self를 쓰는 것이 웹이 더 빨리 반응한다.
         if (self.value === "night") {
           target.style.backgroundColor = "black";
           target.style.color = "white";
