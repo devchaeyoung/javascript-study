@@ -1,8 +1,23 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="sft" />
-    <title>그리드</title>
+    <meta charset="uft-8" />
+    <title>grid of display attribute</title>
+    <style>
+      #grid {
+        border: 5px solid gray;
+        display: grid;
+        grid-template-columns: 150px 1fr;
+      } /*navigation을 150px만큼 두고 옆에 나머지 공감에 article을 둔다.*/
+      div {
+        border: 5px solid pink;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div id="grid">
+      <div>Navigation</div>
+      <div>article</div>
+    </div>
+  </body>
 </html>
