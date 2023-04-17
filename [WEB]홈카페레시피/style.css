@@ -1,0 +1,65 @@
+#button {
+  float: right;
+}
+
+.velog,
+.night_day {
+  padding: 3px;
+  margin: 1px;
+}
+
+h1 {
+  text-align: center;
+  border-bottom: 2px solid burlywood;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.title {
+  color: black;
+  text-decoration-line: none;
+}
+#contents h2 {
+  color: gray;
+}
+#contents a {
+  color: black;
+  text-decoration-line: none;
+}
+#contents ul {
+  list-style-type: upper-roman;
+  line-height: 1.7;
+  margin: 0;
+  padding-inline-start: 1.5em;
+}
+#contents ul ::marker {
+  color: burlywood;
+  font-weight: bold;
+}
+#grid {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+}
+#contents {
+  border-right: 2px solid burlywood;
+  padding-left: 15px;
+}
+img {
+  width: 100%;
+}
+#article {
+  padding-left: 20px;
+}
+
+@media (max-width: 680px) {
+  #grid {
+    display: block;
+  }
+  #contents {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-bottom: 33px;
+    padding-left: 25px;
+    border-right: none;
+    border-bottom: 2px solid burlywood;
+  }
+}
