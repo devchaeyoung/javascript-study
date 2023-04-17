@@ -2,6 +2,13 @@
   float: right;
 }
 
+#button2 {
+  width: 100%;
+  display: flex;
+  padding-left: 30px;
+  align-items: center;
+}
+
 .velog,
 .night_day {
   padding: 3px;

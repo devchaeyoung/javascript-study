@@ -4,10 +4,11 @@
     <meta charset="utf-8" />
     <title>커피한잔을 즐길 수 있는 시간은 우리 삶을 풍요롭게한다</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="night_day.js"></script>
   </head>
   <body>
     <div id="button">
-      <input type="button" class="night_day" value="night" onclick="alert('커피')" />
+      <input type="button" class="night_day1" value="night" onclick="nightdayHandler(this)" />
       <input type="button" class="velog" value="Go Dev's Velog" onclick="window.open('http://velog.io/@xiu_8')" />
     </div>
     <h1><a href="welcome.html" class="title">나만의 홈카페 만들기</a></h1>
@@ -47,6 +48,10 @@
         <h3>welcome</h3>
         <p>안녕하세요. 집에서 만들 수 있는 커피레시피를 확인해보세요! 홈카페를 집에서 즐기는 사람들을 위한 웹사이트입니다.</p>
       </div>
+    </div>
+    <div id="button2">
+      <input type="button" class="night_day2" value="night" onclick="nightdayHandler(this)" />
+      <input type="button" class="velog" value="Go Dev's Velog" onclick="window.open('http://velog.io/@xiu_8')" />
     </div>
   </body>
 </html>

@@ -15,6 +15,25 @@
       span {
         color: red;
       }
+      @media (prefers-color-scheme: light) {
+        body {
+          background-color: ivory;
+        }
+      }
+      @media (prefers-color-scheme: dark) {
+        body {
+          background-color: black;
+          color: white;
+        }
+        .title {
+          color: rgb(231, 198, 125);
+          text-decoration-line: none;
+        }
+        #contents a {
+          color: white;
+          text-decoration-line: none;
+        }
+      }
     </style>
   </head>
 
@@ -22,7 +41,7 @@
     <script>
       document.write("hello");
     </script>
-    <h1><a href="index.html">Things I studied.</a></h1>
+    <h1 class="title"><a href="index.html">Things I studied.</a></h1>
     <input
       type="button"
       value="night"
